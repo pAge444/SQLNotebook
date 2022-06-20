@@ -1,0 +1,24 @@
+.header {
+  margin-bottom: 20px;
+  /* border: 2px solid red; */
+  height: 60px;
+  background-color: #334443;
+}
+
+.head1 {
+  margin: 0;
+  display: inline;
+  float: left;
+  line-height: 40px;
+  color: white;
+  padding: 10px;
+}
+
+.head2 {
+  float: right;
+}
+
+.head2:hover {
+  background-color: #c6ffc1;
+  color: #334443;
+}

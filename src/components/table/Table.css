@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.sql_table td,
+.sql_table th {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sql_table tr:nth-child(even) {
+  background-color: #c6ffc1;
+}
+
+.sql_table tr:hover {
+  background-color: #34656d;
+  color: white;
+}
+.sql_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #334443;
+  color: white;
+}
+.sql_table {
+  font-family: "Poppins", sans-serif;
+  border-collapse: separate;
+  width: 95%;
+  margin: auto;
+  font-size: 14px;
+  height: 200px;
+  overflow: scroll;
+}
+.table_container {
+  margin-top: 40px;
+  max-height: 300px;
+  overflow: auto;
+  overflow-x: auto;
+}
