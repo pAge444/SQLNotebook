@@ -62,6 +62,17 @@ function App() {
     });
   };
 
+  const onAddFirstQueryHandler = () => {
+    setQueryArray((prevQueryArray) => {
+      const newQueryArray = [];
+      newQueryArray.push({ id: Date.now(), query: "" });
+      for (let i = 0; i < prevQueryArray.length; i++) {
+        newQueryArray.push(prevQueryArray[i]);
+      }
+      return newQueryArray;
+    });
+  };
+
   const onHeaderHandler = (_Doc) => {
     const Doc = _Doc;
     setDisplayData(Doc);
@@ -81,7 +92,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header onHeader={onHeaderHandler} />
+      <Header
+        onHeader={onHeaderHandler}
+        onAddFirstQuery={onAddFirstQueryHandler}
+      />
       {newDisplayData}
     </div>
   );

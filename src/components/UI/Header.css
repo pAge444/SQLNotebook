@@ -22,3 +22,16 @@
   background-color: #c6ffc1;
   color: #334443;
 }
+
+.btn4 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 0px;
+  padding: 15px;
+}
+.btn4 img {
+  height: 30px;
+  width: 30px;
+  color: white;
+}
